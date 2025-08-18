@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e0e0e0;
+    background-color: #0f0f0f;
+    background-image: linear-gradient(180deg, rgba(0, 255, 140, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 255, 140, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: matrix-glow 10s linear infinite;
+}
+
+@keyframes matrix-glow {
+    0% { background-position: 0 0, 0 0; }
+    100% { background-position: 40px 40px, 40px 40px; }
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.highlight {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ff99;
+    border: 1px solid #00ff99;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00ff99;
+    color: #0f0f0f;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Fade-in animation for sections */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+#photo img {
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #f1efef;
+    transition: transform 0.3s ease;
+}
+
+#photo img:hover {
+    transform: scale(1.05);
+}
+
+#description {
+    max-width: 600px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#contact {
+    background-color: #111;
+    text-align: center;
+}
+
+#contact a {
+    color: #eef1f1;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #ffffff;
+}
+
+section h3 {
+    color: #00ff99;
+    margin-bottom: 10px;
+}
